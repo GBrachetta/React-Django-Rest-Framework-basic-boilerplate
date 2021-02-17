@@ -1,0 +1,47 @@
+{
+    "python.linting.pylintArgs": [
+        "--load-plugins=pylint_django",
+        "--load-plugins=pylint_django.checkers.migrations",
+        "--load-plugins",
+        "pylint_django",
+        "--load-plugins",
+        "pylint_django.checkers.migrations",
+        "--disable=C0114, C0115, W0222",
+        "--disable=imported-auth-user",
+        "--disable=invalid-name",
+        "--disable=line-too-long",
+        "--disable=too-many-ancestors",
+        "--django-settings-module=app.settings",
+    ],
+    "[django-html]": {
+        "editor.defaultFormatter": "HookyQR.beautify",
+        "editor.quickSuggestions": {
+            "comments": true,
+            "other": true,
+            "strings": true
+        },
+        "editor.tabSize": 4,
+        "editor.wordWrap": "on"
+    },
+    "beautify.language": {
+        "html": [
+            "django-html",
+            "html",
+            "jinja",
+            "jinja-html"
+        ]
+    },
+    "emmet.includeLanguages": {
+        "django-html": "html",
+        "javascript": "javascriptreact",
+        "jinja-html": "html"
+    },
+    "files.associations": {
+        "**/templates/**/*": "django-txt",
+        "**/templates/**/*.html": "django-html",
+    },
+    "html-css-class-completion.HTMLLanguages": [
+        "django-html",
+    ],
+    "git.postCommitCommand": "push"
+}
