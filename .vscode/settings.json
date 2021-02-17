@@ -1,18 +1,4 @@
 {
-    "python.linting.pylintArgs": [
-        "--load-plugins=pylint_django",
-        "--load-plugins=pylint_django.checkers.migrations",
-        "--load-plugins",
-        "pylint_django",
-        "--load-plugins",
-        "pylint_django.checkers.migrations",
-        "--disable=C0114, C0115, W0222",
-        "--disable=imported-auth-user",
-        "--disable=invalid-name",
-        "--disable=line-too-long",
-        "--disable=too-many-ancestors",
-        "--django-settings-module=app.settings",
-    ],
     "[django-html]": {
         "editor.defaultFormatter": "HookyQR.beautify",
         "editor.quickSuggestions": {
@@ -22,6 +8,10 @@
         },
         "editor.tabSize": 4,
         "editor.wordWrap": "on"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python",
+        "editor.tabSize": 4
     },
     "beautify.language": {
         "html": [
@@ -38,10 +28,36 @@
     },
     "files.associations": {
         "**/templates/**/*": "django-txt",
-        "**/templates/**/*.html": "django-html",
+        "**/templates/**/*.html": "django-html"
     },
+    "git.postCommitCommand": "push",
     "html-css-class-completion.HTMLLanguages": [
-        "django-html",
+        "django-html"
     ],
-    "git.postCommitCommand": "push"
+    "python.formatting.blackArgs": [
+        "--line-length=79"
+    ],
+    "python.formatting.provider": "black",
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.ignorePatterns": [
+        ".vscode/*.py",
+        "**/site-packages/**/*.py",
+        "**/migrations/**"
+    ],
+    "python.linting.pylintArgs": [
+        "--load-plugins=pylint_django",
+        "--load-plugins=pylint_django.checkers.migrations",
+        "--load-plugins",
+        "pylint_django",
+        "--load-plugins",
+        "pylint_django.checkers.migrations",
+        "--disable=C0114, C0115, W0222",
+        "--disable=imported-auth-user",
+        "--disable=invalid-name",
+        "--disable=line-too-long",
+        "--disable=too-many-ancestors",
+        "--django-settings-module=app.settings"
+    ],
+    "python.linting.pylintEnabled": true
 }
