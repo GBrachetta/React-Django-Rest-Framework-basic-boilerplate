@@ -10,7 +10,7 @@
 - Create react components in `frontend/src/components/`
 - main.js auto generates on watch under `frontend/static/frontend/` and renders in index.html.
 - App is live on localhost:8000.
-- Api is live on localhost:8000/api (create models, views and urls in api app)
+- Api is live on localhost:8000/api (create models, views, serializers and urls in api app)
 - A sample model, serializer, view and url path is provided. You may either ignore it and overwrite it or delete the contents of the following files and create your own:
   - ./api/models.py
   - ./api/serializers.py
