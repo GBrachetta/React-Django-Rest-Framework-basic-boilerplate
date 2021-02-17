@@ -9,3 +9,12 @@
 - Create api models in `api` app.
 - Create react components in `frontend/src/components/`
 - main.js auto generates on watch under `frontend/static/frontend/` and renders in index.html.
+- App is live on localhost:8000.
+- Api is live on localhost:8000/api (create models, views and urls in api app)
+- A sample model, serializer, view and url path is provided. You may either ignore it and overwrite it or delete the contents of the following files and create your own:
+  - ./api/models.py
+  - ./api/serializers.py
+  - ./api/urls.py
+  - ./api/views.py
+- Delete afterwards db.sqlite3 and `./api/migrations/0001_initial.py`
+- Migrate again to generate a fresh database and write your own views, models, urls and serializers.
